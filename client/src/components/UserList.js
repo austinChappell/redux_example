@@ -11,11 +11,6 @@ function UserList(props) {
             <h2>Name: {user.firstName} {user.lastName}</h2>
             <h4>Email: {user.email}</h4>
             <p>Bio: {user.bio}</p>
-            <button
-              style={{ backgroundColor: 'blue', color: 'white' }}
-            >
-              Become User
-            </button>
           </div>
         )
       })}
