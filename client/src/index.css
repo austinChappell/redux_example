@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif; }
+
+.App {
+  text-align: center; }
+
+.NavBar {
+  background-color: black;
+  padding: 10px;
+  margin: 0; }
+  .NavBar ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none; }
+    .NavBar ul a {
+      color: white;
+      text-decoration: none;
+      text-transform: uppercase; }
+
+.SignUp {
+  margin: 50px 0; }
+  .SignUp .form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+    .SignUp .form input {
+      min-width: 40%;
+      padding: 4px;
+      font-size: 16px;
+      margin: 10px; }
+    .SignUp .form div {
+      flex-basis: 100%; }
+    .SignUp .form button {
+      background-color: green;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      font-size: 20px;
+      cursor: pointer; }

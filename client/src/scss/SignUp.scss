@@ -1,0 +1,25 @@
+.SignUp {
+  margin: 50px 0;
+  .form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    input {
+      min-width: 40%;
+      padding: 4px;
+      font-size: 16px;
+      margin: 10px;
+    }
+    div {
+      flex-basis: 100%;
+    }
+    button {
+      background-color: green;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+  }
+}
