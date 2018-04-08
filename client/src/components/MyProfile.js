@@ -6,7 +6,6 @@ import actions from '../store/actions';
 import UserAPI from '../data/api/user';
 
 import Form from './Form';
-import UserList from './UserList';
 
 const userAPI = new UserAPI();
 
@@ -36,7 +35,6 @@ class MyProfile extends Component {
           submit={this.submit}
           submitText="Update"       
         />
-        <UserList/>
       </div>
     );
   }
