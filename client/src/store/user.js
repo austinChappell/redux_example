@@ -1,9 +1,10 @@
 const initialState = {
   currentUser: {
-    bio: 'The bio',
-    email: 'austin@test.com',
-    firstName: 'Austin',
-    lastName: 'Chappell',
+    bio: '',
+    email: '',
+    firstName: '',
+    lastName: '',
+    _id: '',
   },
   users: [],
 }
@@ -11,12 +12,13 @@ const initialState = {
 const reducer = (state = initialState, action) => {
   switch (action.type) {
     case 'ADD_USER':
-      console.log('INSIDE THE ADD USER CASE', action)
       const users = state.users.slice();
       users.push(action.user);
       return Object.assign({}, state, { users });
     case 'SET_ALL_USERS':
       return Object.assign({}, state, { users: action.users })
+    case 'SET_CURRENT_USER':
+      return Object.assign({}, state, { currentUser: action.currentUser })
     default:
       return state;
   }

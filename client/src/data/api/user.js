@@ -43,6 +43,20 @@ class UserAPI {
       });
   }
 
+  updateUser = (id, body, cb) => {
+    return fetch(`${apiURL}/api/users/${id}`, {
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      method: 'PUT',
+      body: JSON.stringify(body),
+    }).then(res => res.json())
+      .then(results => cb(results))
+      .catch(err => {
+        throw err;
+      })
+  }
+
 }
 
 export default UserAPI;

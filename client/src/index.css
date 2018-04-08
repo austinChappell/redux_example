@@ -19,20 +19,20 @@ body {
       text-decoration: none;
       text-transform: uppercase; }
 
-.SignUp {
+.SignUp, .MyProfile {
   margin: 50px 0; }
-  .SignUp .form {
+  .SignUp .form, .MyProfile .form {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around; }
-    .SignUp .form input {
+    .SignUp .form input, .MyProfile .form input {
       min-width: 40%;
       padding: 4px;
       font-size: 16px;
       margin: 10px; }
-    .SignUp .form div {
+    .SignUp .form div, .MyProfile .form div {
       flex-basis: 100%; }
-    .SignUp .form button {
+    .SignUp .form button, .MyProfile .form button {
       background-color: green;
       color: white;
       border: none;

@@ -32,4 +32,16 @@ router.get('/:id', (req, res) => {
   })
 })
 
+router.put('/:id', (req, res) => {
+  const { id } = req.params;
+  const { body } = req;
+  User.findByIdAndUpdate(id, body, { new: true }, (err, user) => {
+    if (err) {
+      res.json(err);
+    } else {
+      res.json(user);
+    }
+  })
+})
+
 module.exports = router;
